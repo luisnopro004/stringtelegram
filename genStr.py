@@ -129,11 +129,11 @@ async def genStr(_, msg: Message):
         return
     try:
         session_string = await client.export_session_string()
-        await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\nBy [@owogram](tg://openmessage?user_id=2061163663)")
+        await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\n Bởi [@OggyVn](tg://openmessage?user_id=1995602170)")
         await client.disconnect()
         text = "✅ Xin chúc mừng! Phiên chuỗi pyrogram cho tài khoản Telegram của bạn đã được tạo thành công. Bạn có thể tìm thấy phiên chuỗi trong phần tin nhắn đã lưu trong tài khoản telegram của mình. Cảm ơn bạn đã sử dụng tôi! 🤖."
         reply_markup = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="🔥 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url=f"https://t.me/owogram")]]
+            [[InlineKeyboardButton(text="🔥 Liên Hệ Admin 🔥", url=f"https://t.me/OggyVn")]]
         )
         await bot.send_message(chat.id, text, reply_markup=reply_markup)
     except Exception as e:
@@ -161,11 +161,11 @@ Must Join Channel for Bot Updates !!
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('𝘽𝙤𝙩𝙨 𝙎𝙪𝙥𝙥𝙤𝙧𝙩', url='https://t.me/owogram_support'),
-                InlineKeyboardButton('𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧', url='https://t.me/gimsuri')
+                InlineKeyboardButton(' Hỗ Trợ Bot ', url='https://t.me/Oggyvn'),
+                InlineKeyboardButton(' Thiết Kế Bot ', url='https://t.me/oggyvn')
             ],
             [
-                InlineKeyboardButton('🔥 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥 ', url='https://t.me/owogram'),
+                InlineKeyboardButton(' Kênh Hỗ Trợ ', url='https://t.me/oggyvn'),
             ]
         ]
     )
